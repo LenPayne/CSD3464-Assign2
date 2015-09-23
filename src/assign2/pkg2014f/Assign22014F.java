@@ -102,10 +102,10 @@ public class Assign22014F {
      * of his or her favourite animal. Use a String variable 
      * to store the input. The program should display the 
      * following:
-     * - The number of characters in the city name
-     * - The name of the city in all uppercase letters
-     * - The name of the city in all lowercase letters
-     * - The first character in the name of the city
+     * - The number of characters in the animal name
+     * - The name of the animal in all uppercase letters
+     * - The name of the animal in all lowercase letters
+     * - The first character in the name of the animal
      *
      * NOTE: This was not covered in the slides. Refer to
      *  the table on pg. 74 to determine how to do this.
