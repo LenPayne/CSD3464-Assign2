@@ -35,14 +35,14 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise4 method, of class Assign22014F.
+     * Test of doExercise1 method, of class Assign22014F.
      */
     @Test
-    public void testDoExercise4() {
+    public void testDoExercise1() {
         String[] expected
-                = {"*", "***", "*****", "*******", "*****", "***", "*"};
+                = {"*", "* *", "* * *", "* * * *", "* * *", "* *", "*"};
 
-        Assign22014F.doExercise4();
+        Assign22014F.doExercise1();
         String[] actual = outContent.toString().split("\n");
 
         for (int i = 0; i < expected.length; i++) {
@@ -52,16 +52,16 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise9 method, of class Assign22014F.
+     * Test of doExercise2 method, of class Assign22014F.
      */
     @Test
-    public void testDoExercise9() {
-        String fakeInput = "60\n8\n";
+    public void testDoExercise2() {
+        String fakeInput = "300\n3\n";
         byte[] fakeInputArray = fakeInput.getBytes();
-        String expected = "7.5";
+        String expected = "100";
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        Assign22014F.doExercise9();
+        Assign22014F.doExercise2();
         String actual = outContent.toString();
 
         assertTrue("Testing if " + actual + " contains " + expected,
@@ -70,17 +70,17 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise10 method, of class Assign22014F.
+     * Test of doExercise3 method, of class Assign22014F.
      */
     @Test
-    public void testDoExercise10() {
+    public void testDoExercise3() {
         String fakeInput = "62\n71\n85\n";
         byte[] fakeInputArray = fakeInput.getBytes();
         String[] expected
                 = {"62", "71", "85", "72.6"};
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        Assign22014F.doExercise10();
+        Assign22014F.doExercise3();
         String actual = outContent.toString();
 
         for (int i = 0; i < expected.length; i++) {
@@ -92,17 +92,17 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise12 method, of class Assign22014F.
+     * Test of doExercise4 method, of class Assign22014F.
      */
     @Test
-    public void testDoExercise12() {
+    public void testDoExercise4() {
         String fakeInput = "Buffalo";
         byte[] fakeInputArray = fakeInput.getBytes();
         String[] expected
                 = {"7", "BUFFALO", "buffalo", "B"};
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        Assign22014F.doExercise12();
+        Assign22014F.doExercise4();
         String[] actual = outContent.toString().split("\n");
 
         for (int i = 0; i < expected.length; i++) {
@@ -114,20 +114,19 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise16 method, of class Assign22014F.
+     * Test of doExercise5 method, of class Assign22014F.
      */
     @Test
-    public void testDoExercise16() {
-        String fakeInput = "Bob\n14\nSarnia\nLambton College\nProgrammer\nDog\nRex\n";
+    public void testDoExercise5() {
+        String fakeInput = "Bob\nTuesday\nSarnia\nLambton College\nProgrammer\nCamry\n";
         byte[] fakeInputArray = fakeInput.getBytes();
         String expected = 
-                "There once was a person named Bob who lived in Sarnia. At the age of 14,"
-                + " Bob went to college at Lambton College. Bob graduated and went to work as a"
-                + " Programmer. Then, Bob adopted a(n) Dog named Rex. They both"
-                + " lived happily ever after.";
+                "Once upon a time, Bob travelled to Sarnia on a Tuesday. They " +
+                "were going to Lambton College for an interview as a Programmer. " +
+                "Bob drove there in a Camry. They got the job!";
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        Assign22014F.doExercise16();
+        Assign22014F.doExercise5();
         String actual = outContent.toString();
         
         assertTrue("Testing if " + actual + " matches " + expected,
