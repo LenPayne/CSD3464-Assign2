@@ -45,9 +45,13 @@ public class Assign22014FTest {
         Assign22014F.doExercise1();
         String[] actual = outContent.toString().split("\n");
 
-        for (int i = 0; i < expected.length; i++) {
-            assertEquals("Testing if " + actual[i] + " equals " + expected[i],
-                    expected[i], actual[i].trim());
+        if (actual.length <= 1) {
+            fail("No Output");
+        } else {
+            for (int i = 0; i < expected.length; i++) {
+                assertEquals("Testing if " + actual[i] + " equals " + expected[i],
+                        expected[i], actual[i].trim());
+            }
         }
     }
 
