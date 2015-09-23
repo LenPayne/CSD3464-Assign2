@@ -79,6 +79,12 @@ public class Assign22014F {
      * result on the screen.
      *
      * - Gaddis pg. 106-7
+     * SAMPLE EXECUTION:
+     * Enter Kilometers:
+     * 60
+     * Enter Hours:
+     * 0.5
+     * Speed is: 120.0km/h
      */
     public static void doExercise2() {
         // TODO: Complete Exercise #2 Below
@@ -91,6 +97,14 @@ public class Assign22014F {
      * score, as well as the average of the scores.
      *
      * - Gaddis pg. 107
+     * SAMPLE EXECUTION:
+     * Enter Score 1:
+     * 80
+     * Enter Score 2:
+     * 81
+     * Enter Score 3:
+     * 84
+     * Scores were: 80.0, 81.0, 84.0. And the average was: 81.66666666666667
      */
     public static void doExercise3() {
         // TODO: Complete Exercise #3 Below
@@ -113,6 +127,13 @@ public class Assign22014F {
      *  and .toUpperCase() to accomplish this.
      *
      * - Gaddis pg. 107
+     * SAMPLE EXECUTION:
+     * What's your favourite animal?
+     * Chimpanzee
+     * Number of Chars: 10
+     * Name in All Caps: CHIMPANZEE
+     * Name in Lower Case: chimpanzee
+     * First Character: C
      */
     public static void doExercise4() {
         // TODO: Complete Exercise #4 Below
@@ -138,6 +159,20 @@ public class Assign22014F {
      * NAME drove there in a CAR. They got the job!
      *
      * - Gaddis pg. 108
+     * SAMPLE EXECUTION:
+     * What's your name?
+     * Bill
+     * Pick a day of the week:
+     * Monday
+     * Name a city:
+     * London
+     * Name a business:
+     * IBM
+     * Name a profession:
+     * Programmer
+     * Name a type of car:
+     * Lexus
+     * Once upon a time, Bill travelled to London on a Monday. They were going to IBM for an interview as a Programmer. Bill drove there in a Lexus. They got the job!
      */
     public static void doExercise5() {
         // TODO: Complete Exercise #5 Below
