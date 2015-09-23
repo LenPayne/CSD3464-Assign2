@@ -105,11 +105,14 @@ public class Assign22014FTest {
         Assign22014F.doExercise4();
         String[] actual = outContent.toString().split("\n");
 
-        for (int i = 0; i < expected.length; i++) {
-            assertTrue("Testing if " + actual[i + 1] + " contains " + expected[i],
-                    actual[i + 1].contains(expected[i]));
+        if (actual.length <= 1) {
+            fail("No Output");
+        } else {
+            for (int i = 0; i < expected.length; i++) {
+                assertTrue("Testing if " + actual[i + 1] + " contains " + expected[i],
+                        actual[i + 1].contains(expected[i]));
+            }
         }
-
         System.setIn(null);
     }
 
@@ -120,18 +123,18 @@ public class Assign22014FTest {
     public void testDoExercise5() {
         String fakeInput = "Bob\nTuesday\nSarnia\nLambton College\nProgrammer\nCamry\n";
         byte[] fakeInputArray = fakeInput.getBytes();
-        String expected = 
-                "Once upon a time, Bob travelled to Sarnia on a Tuesday. They " +
-                "were going to Lambton College for an interview as a Programmer. " +
-                "Bob drove there in a Camry. They got the job!";
+        String expected
+                = "Once upon a time, Bob travelled to Sarnia on a Tuesday. They "
+                + "were going to Lambton College for an interview as a Programmer. "
+                + "Bob drove there in a Camry. They got the job!";
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
         Assign22014F.doExercise5();
         String actual = outContent.toString();
-        
+
         assertTrue("Testing if " + actual + " matches " + expected,
                 actual.contains(expected));
-        
+
         System.setIn(null);
     }
 
