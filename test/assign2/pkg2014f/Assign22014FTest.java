@@ -49,7 +49,7 @@ public class Assign22014FTest {
             fail("No Output");
         } else {
             for (int i = 0; i < expected.length; i++) {
-                assertEquals("Testing if " + actual[i] + " equals " + expected[i],
+                assertEquals("Testing if '" + actual[i] + "' equals '" + expected[i] + "'",
                         expected[i], actual[i].trim());
             }
         }
@@ -68,7 +68,7 @@ public class Assign22014FTest {
         Assign22014F.doExercise2();
         String actual = outContent.toString();
 
-        assertTrue("Testing if " + actual + " contains " + expected,
+        assertTrue("Testing if '" + actual + "' contains '" + expected + "'",
                 actual.contains(expected));
         System.setIn(null);
     }
@@ -88,7 +88,7 @@ public class Assign22014FTest {
         String actual = outContent.toString();
 
         for (int i = 0; i < expected.length; i++) {
-            assertTrue("Testing if " + actual + " contains " + expected[i],
+            assertTrue("Testing if '" + actual + "' contains '" + expected[i] + "'",
                     actual.contains(expected[i]));
         }
 
@@ -113,7 +113,7 @@ public class Assign22014FTest {
             fail("No Output");
         } else {
             for (int i = 0; i < expected.length; i++) {
-                assertTrue("Testing if " + actual[i + 1] + " contains " + expected[i],
+                assertTrue("Testing if '" + actual[i + 1] + "' contains '" + expected[i] + "'",
                         actual[i + 1].contains(expected[i]));
             }
         }
@@ -136,7 +136,7 @@ public class Assign22014FTest {
         Assign22014F.doExercise5();
         String actual = outContent.toString();
 
-        assertTrue("Testing if " + actual + " matches " + expected,
+        assertTrue("Testing if '" + actual + "' matches '" + expected + "'",
                 actual.contains(expected));
 
         System.setIn(null);
