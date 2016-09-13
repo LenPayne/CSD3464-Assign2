@@ -41,7 +41,13 @@ public class Assign2Test {
     @Test
     public void testDoExercise1() {
         String[] expected
-                = {"*", "* *", "* * *", "* * * *", "* * *", "* *", "*"};
+                = {"*", 
+                   "* *", 
+                   "* * *", 
+                   "* * * *", 
+                   "* * * * *", 
+                   "* * * * * *", 
+                   "* * * * * * *"};
 
         Assign2.doExercise1();
         String[] actual = outContent.toString().split("\n");
@@ -61,9 +67,9 @@ public class Assign2Test {
      */
     @Test
     public void testDoExercise2() {
-        String fakeInput = "300\n3\n";
+        String fakeInput = "600\n8\n";
         byte[] fakeInputArray = fakeInput.getBytes();
-        String expected = "100";
+        String expected = "75";
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
         Assign2.doExercise2();

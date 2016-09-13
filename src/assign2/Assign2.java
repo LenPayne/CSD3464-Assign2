@@ -55,12 +55,12 @@ public class Assign2 {
     /* Exercise #1
      * Write a program that displays the following pattern:
      *     *
-     *    * *
-     *   * * *
-     *  * * * *
-     *   * * *
-     *    * *
-     *     *
+     *     * *
+     *     * * *
+     *     * * * *
+     *     * * * * *
+     *     * * * * * *
+     *     * * * * * * *
      *
      * - Gaddis pg. 106
      */
@@ -127,6 +127,10 @@ public class Assign2 {
      *  and .toUpperCase() to accomplish this.
      *
      * - Gaddis pg. 107
+     *
+     * NOTE: Order of output is important. The tests will fail 
+     *       if you put the output in the wrong order.
+     *
      * SAMPLE EXECUTION:
      * What's your favourite animal?
      * Chimpanzee
