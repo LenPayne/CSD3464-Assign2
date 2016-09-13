@@ -3,14 +3,14 @@
  * Objects. (6th ed.). Upper Saddle River, NJ: Pearson Education.
  * ISBN: 978-0-13-395705-1
  */
-package assign2.pkg2014f;
+package assign2;
 
 import java.util.Scanner;
 
 /**
  * @author <ENTER YOUR NAME HERE>
  */
-public class Assign22014F {
+public class Assign2 {
 
     /**
      * @param args the command line arguments

@@ -1,5 +1,6 @@
-package assign2.pkg2014f;
+package assign2;
 
+import assign2.Assign2;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -11,13 +12,13 @@ import org.junit.Test;
 /**
  * @author Len Payne
  */
-public class Assign22014FTest {
+public class Assign2Test {
 
     // Streams used to hijack System.out and System.err
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
 
-    public Assign22014FTest() {
+    public Assign2Test() {
     }
 
     @Before
@@ -35,14 +36,14 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise1 method, of class Assign22014F.
+     * Test of doExercise1 method, of class Assign2.
      */
     @Test
     public void testDoExercise1() {
         String[] expected
                 = {"*", "* *", "* * *", "* * * *", "* * *", "* *", "*"};
 
-        Assign22014F.doExercise1();
+        Assign2.doExercise1();
         String[] actual = outContent.toString().split("\n");
 
         if (actual.length <= 1) {
@@ -56,7 +57,7 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise2 method, of class Assign22014F.
+     * Test of doExercise2 method, of class Assign2.
      */
     @Test
     public void testDoExercise2() {
@@ -65,7 +66,7 @@ public class Assign22014FTest {
         String expected = "100";
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        Assign22014F.doExercise2();
+        Assign2.doExercise2();
         String actual = outContent.toString();
 
         assertTrue("Testing if '" + actual + "' contains '" + expected + "'",
@@ -74,7 +75,7 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise3 method, of class Assign22014F.
+     * Test of doExercise3 method, of class Assign2.
      */
     @Test
     public void testDoExercise3() {
@@ -84,7 +85,7 @@ public class Assign22014FTest {
                 = {"62", "71", "85", "72.6"};
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        Assign22014F.doExercise3();
+        Assign2.doExercise3();
         String actual = outContent.toString();
 
         for (int i = 0; i < expected.length; i++) {
@@ -96,7 +97,7 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise4 method, of class Assign22014F.
+     * Test of doExercise4 method, of class Assign2.
      */
     @Test
     public void testDoExercise4() {
@@ -106,7 +107,7 @@ public class Assign22014FTest {
                 = {"7", "BUFFALO", "buffalo", "B"};
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        Assign22014F.doExercise4();
+        Assign2.doExercise4();
         String[] actual = outContent.toString().split("\n");
 
         if (actual.length <= 1) {
@@ -121,7 +122,7 @@ public class Assign22014FTest {
     }
 
     /**
-     * Test of doExercise5 method, of class Assign22014F.
+     * Test of doExercise5 method, of class Assign2.
      */
     @Test
     public void testDoExercise5() {
@@ -133,7 +134,7 @@ public class Assign22014FTest {
                 + "Bob drove there in a Camry. They got the job!";
 
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        Assign22014F.doExercise5();
+        Assign2.doExercise5();
         String actual = outContent.toString();
 
         assertTrue("Testing if '" + actual + "' matches '" + expected + "'",
